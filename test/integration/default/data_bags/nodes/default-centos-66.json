@@ -1,0 +1,16 @@
+{
+  "id": "default-centos-66",
+
+  "default_attributes": {
+    "foo1": "bar1"
+  },
+  "force_default_attributes": {
+    "foo2": "bar2"
+  },
+  "override_attributes": {
+    "foo3": "bar3"
+  },
+  "force_override_attributes": {
+    "foo4": "bar4"
+  }
+}

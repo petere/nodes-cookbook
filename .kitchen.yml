@@ -1,0 +1,26 @@
+---
+driver:
+  name: vagrant
+
+platforms:
+  - name: centos-6.6
+
+suites:
+  - name: default
+    run_list:
+      - recipe[nodes]
+      - recipe[test-helper::dosomething]
+    data_bags_path: "test/integration/default/data_bags"
+  # test with not all attribute types present
+  - name: some-missing
+    run_list:
+      - recipe[nodes]
+      - recipe[test-helper::dosomething]
+    data_bags_path: "test/integration/some-missing/data_bags"
+  # test without data bag item
+  - name: no-node
+    run_list:
+      - recipe[nodes]
+      - recipe[test-helper::dosomething]
+    # reuse data bags, but node name won't be there
+    data_bags_path: "test/integration/default/data_bags"

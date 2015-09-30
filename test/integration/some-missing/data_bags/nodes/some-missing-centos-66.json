@@ -1,0 +1,7 @@
+{
+  "id": "some-missing-centos-66",
+
+  "force_default_attributes": {
+    "foo2": "bar2"
+  }
+}
