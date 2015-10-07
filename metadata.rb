@@ -1,4 +1,6 @@
 name 'nodes'
 description 'store node attributes in data bag items'
 license 'MIT'
-version '0.0.1'
+maintainer 'Peter Eisentraut'
+maintainer_email 'peter@eisentraut.org'
+version '0.0.2'
