@@ -1,4 +1,8 @@
-nodes_bag = data_bag('nodes')
+nodes_bag = begin
+              data_bag('nodes')
+            rescue Chef::Exceptions::InvalidDataBagPath, Net::HTTPServerException
+              []
+            end
 
 if nodes_bag.include?(node.name)
   dbi = data_bag_item('nodes', node.name)
