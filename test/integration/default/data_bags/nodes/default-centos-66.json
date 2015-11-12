@@ -2,7 +2,9 @@
   "id": "default-centos-66",
 
   "default_attributes": {
-    "foo1": "bar1"
+    "foo1": {
+      "foo1a": "bar1"
+    }
   },
   "force_default_attributes": {
     "foo2": "bar2"

@@ -14,12 +14,18 @@ suites:
       - recipe[nodes]
       - recipe[test-helper::dosomething]
     data_bags_path: "test/integration/default/data_bags"
+    attributes:
+      foo1:
+        foo1b: baz
   # test with not all attribute types present
   - name: some-missing
     run_list:
       - recipe[nodes]
       - recipe[test-helper::dosomething]
     data_bags_path: "test/integration/some-missing/data_bags"
+    attributes:
+      foo1:
+        foo1b: baz
   # test without data bag item
   - name: no-node
     run_list:
