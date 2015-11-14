@@ -30,7 +30,6 @@ suites:
   - name: no-node
     run_list:
       - recipe[nodes]
-      - recipe[test-helper::dosomething]
     # reuse data bags, but node name won't be there
     data_bags_path: "test/integration/default/data_bags"
   - name: no-data-bag
