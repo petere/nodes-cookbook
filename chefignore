@@ -1,1 +1,5 @@
-.git
+.*
+Berksfile
+Berksfile.lock
+chefignore
+test
